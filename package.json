@@ -9,7 +9,7 @@
     "server": "nodemon server.js",
     "client": "BROWSER=google-chrome-stable npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm build --prefix client"
+    "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm build --prefix client"
   },
   "author": "ubaydllhhh",
   "license": "MIT",
